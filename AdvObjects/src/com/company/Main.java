@@ -16,5 +16,22 @@ public class Main {
                 //has the enemy take damage
                 //has the player take damage
         //once the player is dead print out the player's level and how much xp they had.
+
+
+        Player Main = new Player();
+        while (Main.getHealth()>0)
+        {
+            Enemy Bad = new Enemy(Main.getPlayerLevel());
+            while (Bad.getHealth()>0&&Main.getHealth()>0)
+            {
+                Main.menu(Bad);
+                Bad.takeDamage(Main);
+                if (Bad.getHealth()>0){
+                    Main.takeDamage(Bad);
+                }
+            }
+        }
+        System.out.println("Your level is: " + Main.getPlayerLevel());
+        System.out.println("Your EXP is: " + Main.getXp());
     }
 }

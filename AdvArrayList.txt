@@ -1,0 +1,5 @@
+Classes:
+	Gradebook: sectionName(string), current section (int), sections (array/list of <Section>)
+	Sections: students (list of <Student>),
+	Students: assignments (List of <Assignment>)
+	Assignments: Name of assignment (string), Points Possible(int)/Earned(double)
