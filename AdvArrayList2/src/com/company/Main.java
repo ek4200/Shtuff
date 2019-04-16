@@ -149,8 +149,6 @@ public class Main {
                         }
                     }
                     else {
-                        System.out.println("Please enter a password");
-                        String Password = console.nextLine();
                         System.out.println("Sorry, Account Does Not Exist.");
                         break;
                     }
